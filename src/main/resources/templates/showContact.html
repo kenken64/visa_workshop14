@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>Contact Form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body th:object="${contact}">
+    <h1>Your contact information</h1>
+      <p>Contact id :</p>
+      <p th:text="*{id}">..</p>
+      <br />
+      <p>Name:</p>
+      <p th:text="*{name}">..</p>
+      <br />
+      <p>Email:</p>
+      <p th:text="*{email}">..</p>
+      <br />
+      <p>
+        Phone number:
+        <p th:text="*{phoneNumber}">..</p>
+      </p>
+      <br />
+  </body>
+</html>
